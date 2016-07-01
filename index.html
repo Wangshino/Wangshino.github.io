@@ -11,15 +11,15 @@
     
 
     
-    <meta name="description" content="Nothing">
+    <meta name="description" content="Welcome to my blog.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Shino">
 <meta property="og:url" content="http://wangshino.github.io/index.html">
 <meta property="og:site_name" content="Shino">
-<meta property="og:description" content="Nothing">
+<meta property="og:description" content="Welcome to my blog.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Shino">
-<meta name="twitter:description" content="Nothing">
+<meta name="twitter:description" content="Welcome to my blog.">
 
     
     <link rel="alternative" href="/atom.xml" title="Shino" type="application/atom+xml">
@@ -55,7 +55,7 @@
 					 
 						<li><a href="/">主页 | Home</a></li>
 					
-						<li><a href="/index">索引 | Index</a></li>
+						<li><a href="/categories">分类 | categories</a></li>
 					
 						<li><a href="/archives">归档 | Archives</a></li>
 					
@@ -63,10 +63,9 @@
 					
 					<li>
  					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:wangshino.github.io">
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
 					</form>
 					
 					</li>
@@ -80,15 +79,20 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2016/05/29/exercise1/" title="" itemprop="url">
+    <a href="/2016/06/30/Javascript中this的使用/" title="Javascript中this的使用" itemprop="url">
   
-    <h1 itemprop="name"></h1>
+    <h1 itemprop="name">Javascript中this的使用</h1>
     
      
-           <p itemprop="description" ></p>
+           <p itemprop="description" >前言在学习js的过程中，this一直是困扰我的一个地方，查阅了不少资料才弄明白this的用法，在此篇博文里整理出来。
+this是javascript中的关键字。
+它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。
+例如：
+function (){
+    this.a</p>
         
     
-    <time datetime="2016-05-29T08:31:09.985Z" itemprop="datePublished">2016-05-29</time>
+    <time datetime="2016-06-30T10:55:42.000Z" itemprop="datePublished">2016-06-30</time>
   </a>
 </section>
 
@@ -136,8 +140,26 @@
 
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
 
   
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/this/" style="font-size: 10px;">this</a>
+    </div>
+  </div>
+
 
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
@@ -168,7 +190,7 @@
 	
 	
 	<section class="info">
-		<p> Hello ,I&#39;m Shino. This is my blog on Github. <br/>
+		<p> Hello ,I&#39;m Shino. This is my blog. <br/>
 			This is my blog, believe it or not.</p>
 	</section>
 	 
@@ -186,6 +208,8 @@
 		
 		
 		
+		
+		<a href="mailto:wyzj1204@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
 		
 	</div>
 			
@@ -311,6 +335,35 @@ var _hmt = _hmt || [];
 
 <!-- MathJax Begin -->
 <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <!-- MathJax End -->
