@@ -157,11 +157,8 @@ o.m() // 1
 }
 var o = new test();
 console.log(o.x); // 1
-</code></pre><p>我的理解是，<code>this</code>总是指向<code>function</code>外一层的作用域中的同名属性,如果不存在,则创建一个同名的全局变量。</p>
-<p>情况1不用解释显而易见，情况2指向的上层作用域o对象的x属性，情况3可以理解成<code>o</code>继承了函数<code>test</code>，用<code>o.constructor</code>属性可以看到，<code>o</code>的上层是<code>test</code>。</p>
-<blockquote>
-<p>ES6中提出了块级作用域的概念，这里的this与块级作用域无关。</p>
-</blockquote>
+</code></pre><p>我的理解是，什么都不干的时候<code>this</code>总是指向调用函数的那个对象, 当然如果调用者内封装了this的话,就是文档上说明的this而不是之前说的了</p>
+
 <hr>
 <h2 id="call和apply用法"><a href="#call和apply用法" class="headerlink" title="call和apply用法"></a>call和apply用法</h2><p><code>apply()</code>和<code>call()</code>是函数对象的一个方法，它们的作用是改变函数的调用对象。因此，this所指向的的就是这第一个参数。</p>
 <p><code>apply()</code>和<code>call()</code>作用相同，唯一区在于，<code>call()</code>方法接受的是一个参数列表，而<code>apply()</code>接受的是一个包含多个参数的数组。</p>
